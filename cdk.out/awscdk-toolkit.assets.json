@@ -1,0 +1,34 @@
+{
+  "version": "16.0.0",
+  "files": {
+    "5f83e2a8bc7ca79afcc300d45df613dd32db40aa141b1ab5d88b910f3dbd995e": {
+      "source": {
+        "path": "asset.5f83e2a8bc7ca79afcc300d45df613dd32db40aa141b1ab5d88b910f3dbd995e",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "773124578159-ap-south-1": {
+          "bucketName": "cdk-hnb659fds-assets-773124578159-ap-south-1",
+          "objectKey": "5f83e2a8bc7ca79afcc300d45df613dd32db40aa141b1ab5d88b910f3dbd995e.zip",
+          "region": "ap-south-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::773124578159:role/cdk-hnb659fds-file-publishing-role-773124578159-ap-south-1"
+        }
+      }
+    },
+    "0142de96f963549219edc157b920a766708c72cecb0ac2cc2ba422b707b86930": {
+      "source": {
+        "path": "awscdk-toolkit.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "773124578159-ap-south-1": {
+          "bucketName": "cdk-hnb659fds-assets-773124578159-ap-south-1",
+          "objectKey": "0142de96f963549219edc157b920a766708c72cecb0ac2cc2ba422b707b86930.json",
+          "region": "ap-south-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::773124578159:role/cdk-hnb659fds-file-publishing-role-773124578159-ap-south-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

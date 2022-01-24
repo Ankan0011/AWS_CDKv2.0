@@ -1,0 +1,154 @@
+{
+  "version": "16.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "awscdk-toolkit.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "awscdk-toolkit.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "awscdk-toolkit": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://773124578159/ap-south-1",
+      "properties": {
+        "templateFile": "awscdk-toolkit.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::773124578159:role/cdk-hnb659fds-deploy-role-773124578159-ap-south-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::773124578159:role/cdk-hnb659fds-cfn-exec-role-773124578159-ap-south-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-773124578159-ap-south-1/0142de96f963549219edc157b920a766708c72cecb0ac2cc2ba422b707b86930.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "awscdk-toolkit.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::773124578159:role/cdk-hnb659fds-lookup-role-773124578159-ap-south-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "awscdk-toolkit.assets"
+      ],
+      "metadata": {
+        "/awscdk-toolkit/HelloHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHandlerServiceRole11EF7C63"
+          }
+        ],
+        "/awscdk-toolkit/HelloHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHandler2E4FBA4D"
+          }
+        ],
+        "/awscdk-toolkit/Endpoint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointEEF1FD8F"
+          }
+        ],
+        "/awscdk-toolkit/Endpoint/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointCloudWatchRoleC3C64E0F"
+          }
+        ],
+        "/awscdk-toolkit/Endpoint/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointAccountB8304247"
+          }
+        ],
+        "/awscdk-toolkit/Endpoint/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeployment318525DA8831e890475a64d9218d3d92b1ad8fd0"
+          }
+        ],
+        "/awscdk-toolkit/Endpoint/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeploymentStageprodB78BEEA0"
+          }
+        ],
+        "/awscdk-toolkit/Endpoint/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpoint8024A810"
+          }
+        ],
+        "/awscdk-toolkit/Endpoint/Default/{proxy+}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpointproxy39E2174E"
+          }
+        ],
+        "/awscdk-toolkit/Endpoint/Default/{proxy+}/ANY/ApiPermission.awscdktoolkitEndpoint6CF64F2C.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionawscdktoolkitEndpoint6CF64F2CANYproxy2A113730"
+          }
+        ],
+        "/awscdk-toolkit/Endpoint/Default/{proxy+}/ANY/ApiPermission.Test.awscdktoolkitEndpoint6CF64F2C.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionTestawscdktoolkitEndpoint6CF64F2CANYproxyBE055E34"
+          }
+        ],
+        "/awscdk-toolkit/Endpoint/Default/{proxy+}/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYC09721C5"
+          }
+        ],
+        "/awscdk-toolkit/Endpoint/Default/ANY/ApiPermission.awscdktoolkitEndpoint6CF64F2C.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionawscdktoolkitEndpoint6CF64F2CANY1409266F"
+          }
+        ],
+        "/awscdk-toolkit/Endpoint/Default/ANY/ApiPermission.Test.awscdktoolkitEndpoint6CF64F2C.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionTestawscdktoolkitEndpoint6CF64F2CANY7895D024"
+          }
+        ],
+        "/awscdk-toolkit/Endpoint/Default/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANY485C938B"
+          }
+        ],
+        "/awscdk-toolkit/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/awscdk-toolkit/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/awscdk-toolkit/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "awscdk-toolkit"
+    }
+  }
+}
